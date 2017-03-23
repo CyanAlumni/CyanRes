@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "886848126791",
+    "firebase_url": "https://cyanproject-780ea.firebaseio.com",
+    "project_id": "cyanproject-780ea",
+    "storage_bucket": "cyanproject-780ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886848126791:android:39ae9cc994c9c396",
+        "android_client_info": {
+          "package_name": "com.cyanalumnidev.cyanalumni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886848126791-4t1d5akqrlpok69murj2mi0m0evjqe01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz6XwOCiUvUfd-gSa4fhC8wccMjmcZULg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

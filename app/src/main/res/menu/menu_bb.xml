@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sisfointerdev.cyan.com.cyanalumniapps.MainActivity">
+
+    <item
+        android:id="@+id/bb_ouralumni"
+        android:icon="@drawable/ic_bb_ouralumni"
+        android:title="@string/title_bb_ouralumni" />
+    <item
+        android:id="@+id/bb_jobVacancy"
+        android:icon="@drawable/ic_bb_jobvacancy"
+        android:title="@string/job_vacancy_title" />
+    <item
+        android:id="@+id/bb_internship"
+        android:icon="@drawable/ic_bb_internship"
+        android:title="@string/internship_title" />
+    <item
+        android:id="@+id/bb_project"
+        android:icon="@drawable/ic_bb_project"
+        android:title="@string/project_title" />
+    <item
+        android:id="@+id/bb_login"
+        android:icon="@drawable/ic_action_login"
+        android:title="Alumni Login"/>
+</menu>

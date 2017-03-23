@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/our_alumni_style">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/alumni_photo"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            app:srcCompat="@drawable/ic_bb_ouralumni"
+            app:border_color="#000000"
+            app:border_width="1dp" />
+
+        <TextView
+            android:id="@+id/alumni_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alumni_photo"
+            android:layout_marginBottom="2dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alumni_occ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alumni_name"
+            android:layout_marginBottom="2dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/alumni_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alumni_occ"
+            android:layout_marginBottom="2dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/alumni_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alumni_company"
+            android:layout_marginBottom="2dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="7sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_see_profile"
+        android:text="Profile"
+        android:textSize="15sp"
+        android:textColor="#ffffff"/>
+</LinearLayout>

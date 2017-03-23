@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/our_alumni_style">
+
+            <ImageView
+                android:id="@+id/jobVacancy_pic"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_bb_jobvacancy" />
+
+            <TextView
+                android:id="@+id/jobVacancy_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/jobVacancy_pic"
+                android:layout_margin="10dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jobVacancy_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/jobVacancy_title"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="TextView"
+                android:layout_toRightOf="@+id/jobVacancy_pic"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="italic"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_jobVacancy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_see_profile"
+            android:text="@string/detail_button"
+            android:textSize="15sp"
+            android:textColor="#ffffff"/>
+
+</LinearLayout>

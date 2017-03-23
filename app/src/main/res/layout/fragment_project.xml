@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#966FD6">
+    <Button
+        android:id="@+id/findProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_bb_findalumni"
+        android:text="Find student project"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/black_faded"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_search_ouralumni"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findProject">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
