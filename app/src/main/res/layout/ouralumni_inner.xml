@@ -72,16 +72,18 @@
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="7sp" />
+        <TextView
+            android:id="@+id/detail_ouralumni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alumni_year"
+            android:layout_marginBottom="2dp"
+            android:text="Tap for detail.."
+            android:textAlignment="textEnd"
+            android:textStyle="italic"
+            android:layout_marginRight="20dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="7sp"/>
     </RelativeLayout>
 
-    <Button
-        android:id="@+id/btn_profile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/button_see_profile"
-        android:text="Profile"
-        android:textSize="15sp"
-        android:textColor="#ffffff"/>
 </LinearLayout>

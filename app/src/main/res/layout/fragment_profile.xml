@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/profile_background"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+
+        <ImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="127dp"
+            android:background="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_bb_ouralumni"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/profile_expand"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#9c27b0"
+                android:drawableEnd="@android:drawable/arrow_down_float"
+                android:onClick="expandableButton_profile"
+                android:paddingRight="10dp"
+                android:text="@string/expand_alumni_profile"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/layout_profile_expand"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/profile_expand"
+                android:background="@color/colorPrimaryDark"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:id="@+id/alumni_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/alumni_name"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/alumni_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_below="@id/alumni_name"
+                    android:text="@string/alumni_year"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/alumni_occ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/alumni_year"
+                    android:text="@string/alumni_occupation"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/expand_profileCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alumni_occ"
+                    android:textAlignment="center"
+                    android:text="@string/alumni_company"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/expand_profileAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_below="@id/expand_profileCompany"
+                    android:text="@string/alumni_address"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/expand_profileCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_below="@id/expand_profileAddress"
+                    android:text="@string/alumni_city"
+                    android:textColor="#FFFFFF" />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+                android:id="@+id/post_expand"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_profile_expand"
+                android:background="#2196f3"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="expandableButton_post"
+                android:paddingRight="10dp"
+                android:text="@string/alumni_post"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/layout_post_expand"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/post_expand"
+                android:background="@color/colorPrimaryDark"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/there_are_no_post_yet"
+                    android:textStyle="italic"
+                    android:textColor="#FFFFFF" />
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+                android:id="@+id/contact_expand"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_post_expand"
+                android:background="#10a106"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="expandableButton_contact"
+                android:paddingRight="10dp"
+                android:text="@string/alumni_contact"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/layout_contact_expand"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/contact_expand"
+                android:background="@color/colorPrimaryDark"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <Button
+                    android:id="@+id/email_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="email"/>
+                <Button
+                    android:id="@+id/line_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/email_profile"
+                    android:layout_centerHorizontal="true"
+                    android:text="line"/>
+                <Button
+                    android:id="@+id/whatsapp_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line_profile"
+                    android:layout_centerHorizontal="true"
+                    android:text="whatsapp"/>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

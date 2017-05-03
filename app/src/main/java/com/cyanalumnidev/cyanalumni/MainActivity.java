@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnMenuTabClickListener;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth.AuthStateListener authListener;
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         auth = FirebaseAuth.getInstance();
+
+
 
         authListener = new FirebaseAuth.AuthStateListener() {
             @Override

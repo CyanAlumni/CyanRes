@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Manage Profile" />
+        <item
+            android:id="@+id/nav_post_jobVacancy"
+            android:icon="@drawable/ic_bb_jobvacancy"
+            android:title="Post on Job Vacancy" />  j
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_facebook"
+                android:icon="@drawable/ic_nav_facebook"
+                android:title="Alumni Facebook" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_action_login"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>
