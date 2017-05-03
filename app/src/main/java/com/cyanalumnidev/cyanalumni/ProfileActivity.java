@@ -1,8 +1,6 @@
 package com.cyanalumnidev.cyanalumni;
 
-/**
- * Created by erdinandapandu on 30/03/2017.
- */
+
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
